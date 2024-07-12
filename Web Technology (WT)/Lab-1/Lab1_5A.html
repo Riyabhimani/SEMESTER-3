@@ -1,0 +1,31 @@
+ <!-- WAP in JavaScript to check whether the given number is palindrome or not.  -->
+
+ <!DOCTYPE html>
+ <html lang="en">
+ <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Palindrome</title>
+ </head>
+ <body>
+    
+    <script>
+
+        let n=Number(prompt("Enter a Number:"));
+        let rem,rev=0;
+        while(n!=0){
+            rem=n%10;
+            rev=rev*10+rem;
+            n=n/10;
+        }
+        if(n==rev){
+            console.log("Palindrome");
+        }
+        else{
+            console.log("Not Palindrome");
+        }
+
+    </script>
+
+ </body>
+ </html>
