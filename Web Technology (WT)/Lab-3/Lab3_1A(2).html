@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Maximum by static value</title>
+</head>
+<body>
+    <script>
+        let marks=[60,70,80,90];
+        let max=0;
+        // FOR OF LOOP 
+        // for( let i of marks){
+        //     console.log(i);
+        //     if(i>max){
+        //         max=i;
+        //     }
+        // }
+        // console.log(max);
+
+        // SIMPLE FOR LOOP 
+        for(let i=0;i<=3;i++){
+            console.log("marks["+i+"] = " + marks[i]);
+            if(marks[i]>max){
+                max=marks[i];
+            }
+        }
+        console.log("The maximum number is = " + max);
+
+    </script>
+</body>
+</html>

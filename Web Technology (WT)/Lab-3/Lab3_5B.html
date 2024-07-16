@@ -1,0 +1,43 @@
+<!-- Write a JavaScript that uses a loop that searches a word in sentence held in an array, 
+returning the index of the word. -->
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Find Word Index</title>
+</head>
+<body>
+    <h1>Find Word Index in a Sentence</h1>
+    <label for="sentence">Enter a sentence:</label>
+    <input type="text" id="sentence" />
+    <br>
+    <label for="word">Enter the word to find:</label>
+    <input type="text" id="word" />
+    <br>
+    <button onclick="findWordIndex()">Submit</button>
+    <p id="result"></p>
+
+    <script>
+        function findWordIndex() {
+            const sentence = document.getElementById('sentence').value;
+            const word = document.getElementById('word').value;
+
+            const wordsArray = sentence.split(' ');
+            let index = -1;
+
+            for (let i = 0; i < wordsArray.length; i++) {
+                if (wordsArray[i] == word) {
+                    index = i;
+                    break;
+                }
+            }
+
+            if (index == -1) {
+                document.getElementById('result').textContent = `Word "${word}" not found in the sentence.`;
+            } else {
+                document.getElementById('result').textContent = `The word "${word}" is at index ${index}.`;
+            }
+        }
+    </script>
+</body>
+</html>

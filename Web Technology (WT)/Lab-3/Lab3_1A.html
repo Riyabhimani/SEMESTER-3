@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Maximum by dynamic value</title>
+</head>
+<body>
+    
+    <script>
+
+    let n =Number(prompt("Enter length of an array:"))
+            let i=0;
+            let arr = [n];
+
+            for(i=0;i<n;i++){
+                arr[i]=Number(prompt("Enter number:"));
+                console.log("arr["+i+"] = " + arr[i]);
+
+            }
+            let maxNum=arr[0];
+            for(i=0;i<n;i++){
+                if(arr[i]>maxNum){
+                    maxNum=arr[i];
+                }
+            }
+            console.log("The maximum number is = " +maxNum);
+        
+
+
+    </script>
+
+</body>
+</html>
