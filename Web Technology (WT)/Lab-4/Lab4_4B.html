@@ -1,0 +1,92 @@
+<!-- WAP to display products stored in array.  -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Products</title>
+</head>
+<body>
+    
+    <script>
+        Products=[
+                    {
+                        "company_name": "2024-06-25T06:05:53.553Z",
+                        "product_name": "Micheal Leannon",
+                        "Avatar": "https://cloudflare-ipfs.com/ipfs/Qmd3W5DuhgHirLHGVixi6V76LhCkZUz6pnFt5AJBiyvHye/avatar/1228.jpg",
+                        "id": "1"
+                    },
+                    {
+                        "company_name": "2024-06-25T05:40:43.708Z",
+                        "product_name": "Abel Goldner",
+                        "Avatar": "https://cloudflare-ipfs.com/ipfs/Qmd3W5DuhgHirLHGVixi6V76LhCkZUz6pnFt5AJBiyvHye/avatar/356.jpg",
+                        "id": "2"
+                    },
+                    {
+                        "company_name": "2024-06-25T06:21:09.269Z",
+                        "product_name": "Celia Spinka",
+                        "Avatar": "https://cloudflare-ipfs.com/ipfs/Qmd3W5DuhgHirLHGVixi6V76LhCkZUz6pnFt5AJBiyvHye/avatar/427.jpg",
+                        "id": "3"
+                    },
+                    {
+                        "company_name": "2024-06-24T12:28:59.548Z",
+                        "product_name": "Tricia Bartoletti MD",
+                        "Avatar": "https://cloudflare-ipfs.com/ipfs/Qmd3W5DuhgHirLHGVixi6V76LhCkZUz6pnFt5AJBiyvHye/avatar/186.jpg",
+                        "id": "4"
+                    },
+                    {
+                        "company_name": "2024-06-25T00:17:13.810Z",
+                        "product_name": "Darlene Murray",
+                        "Avatar": "https://cloudflare-ipfs.com/ipfs/Qmd3W5DuhgHirLHGVixi6V76LhCkZUz6pnFt5AJBiyvHye/avatar/1219.jpg",
+                        "id": "5"
+                    },
+                    {
+                        "company_name": "2024-06-24T07:56:18.627Z",
+                        "product_name": "Alyssa Hilll",
+                        "Avatar": "https://cloudflare-ipfs.com/ipfs/Qmd3W5DuhgHirLHGVixi6V76LhCkZUz6pnFt5AJBiyvHye/avatar/1036.jpg",
+                        "id": "6"
+                    },
+                    {
+                        "company_name": "2024-06-24T19:41:03.685Z",
+                        "product_name": "Anita Jaskolski",
+                        "Avatar": "https://cloudflare-ipfs.com/ipfs/Qmd3W5DuhgHirLHGVixi6V76LhCkZUz6pnFt5AJBiyvHye/avatar/124.jpg",
+                        "id": "7"
+                    },
+                    {
+                        "company_name": "2024-06-24T15:53:12.050Z",
+                        "product_name": "Olga Schmeler",
+                        "Avatar": "https://cloudflare-ipfs.com/ipfs/Qmd3W5DuhgHirLHGVixi6V76LhCkZUz6pnFt5AJBiyvHye/avatar/943.jpg",
+                        "id": "8"
+                    },
+                    {
+                        "company_name": "2024-06-24T20:16:47.499Z",
+                        "product_name": "Rogelio Kuvalis",
+                        "Avatar": "https://cloudflare-ipfs.com/ipfs/Qmd3W5DuhgHirLHGVixi6V76LhCkZUz6pnFt5AJBiyvHye/avatar/1150.jpg",
+                        "id": "9"
+                    },
+                    {
+                        "company_name": "2024-06-24T13:00:10.917Z",
+                        "product_name": "Terrance Goldner",
+                        "Avatar": "https://cloudflare-ipfs.com/ipfs/Qmd3W5DuhgHirLHGVixi6V76LhCkZUz6pnFt5AJBiyvHye/avatar/988.jpg",
+                        "id": "10"
+                    }
+            ];
+
+        document.write("<table border=1>");
+                for(i=0;i<Products.length;i++){
+                    document.write("<tr>");
+
+                    document.write("<td>"+Products[i].company_name+"</td>");
+                    document.write("<td>"+Products[i].product_name+"</td>");
+                    document.write("<td><img src="+Products[i].Avatar+"></td>");
+                    document.write("<td>"+Products[i].id+"</td>");
+
+                    document.write("</tr>");
+                }
+                document.write("</table>");
+
+    </script>
+
+</body>
+</html>

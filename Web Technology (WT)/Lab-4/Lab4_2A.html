@@ -1,0 +1,46 @@
+<!--Demonstrate different array functions like push, pop, shift, unshift, splice, sort etc…  -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        Students = ['Riya','Hasti','Shruti','Krisha'];
+        console.log("Before = ",Students);
+
+        //push
+        Students.push("Nandu");
+        console.log("After = ",Students);
+
+        //unshift
+        Students.unshift("Darshi");
+        console.log("After = ",Students);
+
+        //pop
+        Students.pop();
+        console.log("After = ",Students);
+
+        //shift
+        temp=Students.shift();
+        console.log("temp = ",temp);
+        console.log("After = ",Students);
+
+        //sort
+        Students.sort();
+        console.log("After = ",Students);
+
+        //slice
+        let b=Students.slice(1,2);
+        console.log("After = ",Students);
+
+        //splice
+        Students.splice(1,3);
+        console.log("After = ",Students);
+
+    </script>
+</body>
+</html>

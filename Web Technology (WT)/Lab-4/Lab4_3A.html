@@ -1,0 +1,46 @@
+<!-- WAP to display students stored in array.  -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Students</title>
+</head>
+<body>
+    
+    <script>
+        Students=[
+            Student1={
+                    Name:'Riya',
+                    Age:18,
+                    RollNo:237,
+                    Mobile:7859863216,
+                    Email:'riyabhimani.me@gmail.com'
+                  },
+            Student2={
+                    Name:'Shruti',
+                    Age:18,
+                    RollNo:216,
+                    Mobile:9925398105,
+                    Email:'zalariyashruti@gmail.com'
+                  }
+        ];
+
+            document.write("<table border=1>");
+                for(i=0;i<Students.length;i++){
+                    document.write("<tr>");
+
+                    document.write("<td>"+Students[i].Name+"</td>");
+                    document.write("<td>"+Students[i].Age+"</td>");
+                    document.write("<td>"+Students[i].RollNo+"</td>");
+                    document.write("<td>"+Students[i].Mobile+"</td>");
+                    document.write("<td>"+Students[i].Email+"</td>");
+
+                    document.write("</tr>");
+                }
+                document.write("</table>");
+    </script>
+
+</body>
+</html>
